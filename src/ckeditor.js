@@ -63,6 +63,7 @@ ClassicEditor.builtinPlugins = [
 // Editor configuration.
 ClassicEditor.defaultConfig = {
 	plugins: [ SimpleUploadAdapter ],
+
 	toolbar: {
 		items: [
 			'heading',
