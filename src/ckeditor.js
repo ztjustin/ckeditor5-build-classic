@@ -29,7 +29,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
-import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/Base64UploadAdapter';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -57,7 +57,7 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	SimpleUploadAdapter
+	Base64UploadAdapter
 ];
 
 // Editor configuration.
