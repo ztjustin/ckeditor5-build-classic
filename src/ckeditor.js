@@ -30,6 +30,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/Base64UploadAdapter';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -57,7 +58,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Base64UploadAdapter
+	Base64UploadAdapter,
+	Font
 ];
 
 // Editor configuration.
@@ -81,6 +83,7 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'undo',
+			'fontSize', 'fontFamily', 'fontColor',
 			'redo'
 		]
 	},
